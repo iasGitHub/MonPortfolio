@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
@@ -19,7 +19,7 @@
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <div class="logo"><a href="#">Wi'am _ <span>ias.</span></a></div>
             <ul class="menu">
                 <li><a href="#accueil" class="menu-btn">Accueil</a></li>
                 <li><a href="#profil" class="menu-btn">Profil</a></li>
@@ -45,7 +45,7 @@
                 <div class="text-1">Bonjour, je suis</div>
                 <div class="text-2">Idriss Amadou Sall</div>
                 <div class="text-3">et je suis <span class="typing"></span></div>
-                <a href="#">Contactez - moi</a>
+                <a href="contact">Contactez - moi</a>
             </div>
         </div>
     </section>
@@ -181,14 +181,15 @@
         </div>
     </section>
 
-    <!-- qualités personnelles -->
-    <section class="qualite-perso" id="qualite">
+    <!-- section qualités personnelles -->
+    <section class="qualite-perso" id="qualite-perso">
         <div class="max-width">
             <h2 class="titre">Qualités personnelles</h2>
             <div class="contenu-qualite-perso">
                 <div class="row">
                     <p>
                         En plus des qualités techniques et créatifs, dans mon domaine, je suis doté aussi d’une capacité d’intégration très remarquable au sein d’une équipe.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quibusdam asperiores recusandae accusamus consectetur officiis et molestias unde, magni nulla, corrupti expedita sit tempore dolores explicabo reiciendis doloremque tenetur. Harum vel perspiciatis dignissimos deserunt omnis reiciendis iusto quidem ut quo nemo ullam fugiat voluptatem vero, inventore dolore hic alias eum voluptates aspernatur est autem totam amet repellendus labore. Aliquam hic aut ex cupiditate dolor dolorem aperiam enim officiis, eum repellendus natus eaque, ea non rerum laborum fugit odit sint. Delectus repellendus, consequatur architecto laborum dignissimos sunt facere suscipit. Quas eaque molestiae soluta ea quo voluptates similique neque dignissimos ratione exercitationem?
                     </p>
                 </div>
             </div>
@@ -204,14 +205,14 @@
                     <div class="box">
                         <i class="fas fa-paint-brush"></i>
                         <div class="text">Web Design</div>
-                        <p>J'ai réalisé des maquettes de site web que ce soit format One Page ou multipages dont le design du site de Simplon sénégal.</p>
+                        <p>J'ai participé à la réalisation de maquettes de site web que ce soit format One Page ou multipages dont le design du site de Simplon sénégal.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-code"></i>
-                        <div class="text">Devellopement Web</div>
-                        <p>Intégration de site.</p>
+                        <div class="text">Developpement Web</div>
+                        <p>Intégration de sites.</p>
                     </div>
                 </div>
                 <div class="card">
@@ -225,14 +226,13 @@
             </div>
         </div>
     </section>
-
-    <!-- section référence -->
+    <!-- section références -->
     <section class="references" id="references">
         <div class="max-width">
             <h2 class="titre">Références</h2>
             <div class="contenu-reference">
                 <div class="col-lg-6">
-                    <img src="images/profile-1.jpeg" style="width: 200px; " alt="">
+                    <img id="temoignage" src="images/cadre.png" alt="">
                 </div>
                 <div class="col-lg-6">
                     <img src="images/“.png" alt="">
@@ -251,18 +251,42 @@
     </section>
 
     <footer>
-        <div class="row">
-            <div class="col-6">
-                <a href="https://github.com/iasGitHub"><img src="images/github.png" href="https://github.com/iasGitHub" style="width: 25px;" alt=""></a>
-                <img src="images/twitter.png" style="width: 25px;" alt="">
-                <img src="images/linkedin.png" style="width: 25px;" alt="">
-                <img src="images/gmail.png" style="width: 25px;" alt="">
+        <div class="contact" id="contact">
+            <h2 class="titre"> Contactez-moi</h2>
+            <div class="contenu-contact">
+                <div class="colonne gauche">
+                    <a href="https://github.com/iasGitHub"><img src="images/github.png" alt=""></a>
+                    <a href="https://twitter.com/iasR9"><img src="images/twitter.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/idriss-a-sall-556898114/"><img src="images/linkedin.png" alt=""></a>
+                    <a href="mailto:kalsjunior17@gmail.com" ><img src="images/gmail.png" alt=""></a>
+                </div>
+                <div class="colonne droite">
+                    <div class="text">Renseigner</div>
+                    <form action="#">
+                        <div class="champs">
+                            <div class="champ name">
+                                <input type="text" placeholder="Votre nom" required>
+                            </div>
+                            <div class="champ email">
+                                <input type="email" placeholder="Votre email" required>
+                            </div>
+                        </div>
+                        <div class="champ">
+                            <input type="text" placeholder="Sujet" required>
+                        </div>
+                        <div class="champ textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Envoyer</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="col-6"></div>
         </div>
         <span>Created By <a href="https://github.com/iasGitHub/MonPortfolio">ias</a> | <span class="far fa-copyright"></span> Tous droits réservés.</span>
     </footer>
     
-    <script src="script.js"></script>
+    <script src="JS/script.js"></script>
 </body>
 </html>
