@@ -486,6 +486,14 @@ section .titre::after{
   background: none;
 }
 
+
+.centre-d-interet .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
 /* section footer styling */
 footer{
     background: #111;
@@ -529,13 +537,13 @@ footer img{
     }
     .navbar .menu{
         position: fixed;
-        height: 100vh;
+        height: 200vh;
         width: 100%;
         left: -100%;
         top: 0;
         background: #111;
         text-align: center;
-        padding-top: 80px;
+        padding-top: 40px;
         transition: all 0.3s ease;
     }
     .navbar .menu.active{
@@ -546,7 +554,7 @@ footer img{
     }
     .navbar .menu li a{
         display: inline-block;
-        margin: 20px 0;
+        margin: 16px 0;
         font-size: 25px;
     }
     .accueil .contenu-accueil .text-2{
