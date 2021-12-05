@@ -220,7 +220,7 @@ section .titre::after{
 /* skills section styling */
 
 .competences .titre::after{
-    content: "ce que je sais faire";
+    content: "Je sais faire";
 }
 .competences .contenu-competence .colonne{
     width: calc(50% - 30px);
@@ -347,6 +347,17 @@ section .titre::after{
 
 .experiences .titre::after{
     content: "Mes expériences professionnelles";
+    font-size: 14px;
+}
+
+.references .titre::after{
+    content: "Ils témoignent";
+    font-size: 14px;
+}
+
+.centre-d-interet .titre::after{
+    content: "Loisirs";
+    font-size: 14px;
 }
 
 
