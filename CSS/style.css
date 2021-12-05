@@ -37,10 +37,12 @@ section{
 .profil, .experiences, .competences, .formations, .qualite-perso, .references .contact footer{
     font-family: 'Poppins', sans-serif;
 }
-
+#accueil{
+    background-image: url(../images/bgPortfolio1.jpg);
+}
 .accueil{
     display: flex;
-    background: url("images/profil.jpeg") no-repeat center;
+    background: url("../images/bgPortfolio1.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
