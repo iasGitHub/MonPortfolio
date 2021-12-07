@@ -356,7 +356,7 @@ section .titre::after{
 }
 
 .centre-d-interet .titre::after{
-    content: "Loisirs";
+    content: "";
     font-size: 14px;
 }
 
