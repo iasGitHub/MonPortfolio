@@ -217,6 +217,34 @@ section .titre::after{
     content: "Qui suis-je ?";
 }
 
+.profil .contenu-profil .colonne{
+    width: calc(50% - 30px);
+}
+.profil .contenu-profil .gauche .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.profil .contenu-profil .gauche p{
+    text-align: justify;
+}
+.profil .contenu-profil .gauche a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.profil .contenu-profil .gauche a:hover{
+    color: crimson;
+    background: none;
+}
+
 /* skills section styling */
 
 .competences .titre::after{
@@ -356,9 +384,10 @@ section .titre::after{
 }
 
 .centre-d-interet .titre::after{
-    content: "";
+    content: "Loisirs";
     font-size: 14px;
 }
+
 
 
 .experiences{
@@ -500,6 +529,10 @@ section .titre::after{
 }
 
 
+/*Références*/
+
+/*end références*/
+
 .centre-d-interet .card img{
     height: 150px;
     width: 150px;
@@ -507,6 +540,37 @@ section .titre::after{
     border-radius: 50%;
     transition: all 0.3s ease;
 }
+.loi img {
+    height: 12.5rem;
+    width: 12.5rem;
+  }
+  
+  .loisirs {
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  }
+  
+  .loisirs h1 {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  .loisirs p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+  }
+  
+  section .titre{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
 /* section footer styling */
 footer{
     background: #111;
